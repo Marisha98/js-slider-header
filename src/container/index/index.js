@@ -89,16 +89,14 @@ class Header {
       this.#button.classList.replace(
         'header__button--close',
         'header__button--open',
-
-        (this.#wrapper.style.height = 0),
       )
+      this.#wrapper.style.height = 0
     } else {
       this.#button.classList.replace(
         'header__button--open',
         'header__button--close',
-
-        (this.#wrapper.style.height = `${this.#height}px`),
       )
+      this.#wrapper.style.height = `${this.#height}px`
     }
 
     this.#isOpen = !this.#isOpen
